@@ -1,4 +1,3 @@
-// var playerName = 'Axl';
 var playerName = window.prompt("What is your robot's name?");
 var playerHealth = 100;
 var playerAttack = 10;
@@ -9,15 +8,12 @@ var enemyHealth = 50;
 var enemyAttack = 12;
 
 console.log(enemyNames);
-for(var i=0; i < enemyNames.length; i++){
-    console.log(enemyNames[i]);
-    console.log(i);
-    console.log(enemyNames[i] + " is at " + i + " index");
-}
+console.log(enemyNames.length);
+console.log(enemyNames[0]);
+console.log(enemyNames[3])
 
 // fight function
-var fight = function(enemyName) {
-    // repeat and execute as long as the enemy-robot is alive 
+var fight = function(enemyName) { 
     while(playerHealth > 0 && enemyHealth > 0) {
         // ask player if they'd like to fight or run
         var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
